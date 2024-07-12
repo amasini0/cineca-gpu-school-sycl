@@ -134,5 +134,8 @@ int main(const int argc, const char** argv) {
     // Print output file path
     std::cout << "Output written at " << out_name << "\n";
 
+    // TODO: release resources if required
+    // e.g. if you allocated memory on device
+
     return 0;
 }

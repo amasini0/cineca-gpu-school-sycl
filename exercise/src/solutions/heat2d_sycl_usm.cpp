@@ -148,5 +148,9 @@ int main(const int argc, const char** argv) {
     // Print output file path
     std::cout << "Output written at " << out_name << "\n";
 
+    // Free device memory
+    sycl::free(d_field_n);
+    sycl::free(d_field_np1);
+
     return 0;
 }
