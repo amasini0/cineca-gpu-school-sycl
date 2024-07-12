@@ -149,8 +149,8 @@ int main(const int argc, const char** argv) {
     std::cout << "Output written at " << out_name << "\n";
 
     // Free device memory
-    sycl::free(d_field_n);
-    sycl::free(d_field_np1);
+    sycl::free(d_field_n,   device_queue);
+    sycl::free(d_field_np1, device_queue);
 
     return 0;
 }
